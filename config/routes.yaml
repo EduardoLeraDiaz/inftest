@@ -1,5 +1,16 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+#controllers:
+#    resource:
+#        path: ../src/Controller/
+#        namespace: App\Controller
+#    type: attribute
+
+home:
+    path: /
+    controller: App\Controller\HomeController::home
+    methods: GET
+
+# that would be the route to the edit character page where you can upload the picture
+characterPage:
+    path: /character/:id
+    controller: App\Controller\HomeController::home
+    methods: GET
